@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Aeronautics - Aerospace Innovation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #003087;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            height: 50px; /* Adjust based on your logo size */
+            margin-right: 1rem;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 2rem;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #00aaff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 48, 135, 0.8), rgba(0, 48, 135, 0.8)), url('https://via.placeholder.com/1920x600?text=Aerospace+Background');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #003087;
+        }
+
+        .section p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: #f5f5f5;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #003087;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contact-form button {
+            background: #003087;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .contact-form button:hover {
+            background: #00aaff;
+        }
+
+        /* Join Our Team Form */
+        .join-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .join-form input,
+        .join-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .join-form button {
+            background: #003087;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .join-form button:hover {
+            background: #00aaff;
+        }
+
+        /* Footer */
+        .footer {
+            background: #003087;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .footer a {
+            color: #00aaff;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img src="logo.jpg" alt="Pakistan Aeronautics Logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#join">Join Our Team</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Pakistan Aeronautics</h1>
+        <p>Innovating the Future of Aerospace and Aerial Robotics</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Pakistan Aeronautics is a pioneering aerospace startup dedicated to advancing aerial robotics and defense technologies. Our mission is to deliver cutting-edge computational and hardware design solutions for loitering munitions while empowering the next generation through hands-on training and workshops in aerial robotics.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Loitering Munitions Design</h3>
+                <p>We specialize in computational and hardware design of advanced loitering munitions, delivering precision-engineered solutions for defense and security applications.</p>
+            </div>
+            <div class="service-card">
+                <h3>Training & Workshops</h3>
+                <p>Our hands-on training programs and workshops in aerial robotics empower students and professionals at schools, colleges, and universities to excel in aerospace innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> <a href="mailto:pak.aeronautics@gmail.com">pak.aeronautics@gmail.com</a></p>
+        <p><strong>Address:</strong><br>
+           BIC IST<br>
+           P O BOX 2750<br>
+           ISLAMABAD 44000<br>
+           PAKISTAN</p>
+        <p>Reach out to discuss your project or inquire about our training programs.</p>
+        <form class="contact-form" action="https://formspree.io/f/xjkoyedp" method="POST" onsubmit="return validateForm()">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Join Our Team Section -->
+    <section id="join" class="section">
+        <h2>Join Our Team</h2>
+        <p>We are always looking for talented individuals to join our innovative team. Submit your details below.</p>
+        <form class="join-form" action="https://formspree.io/f/xjkoyedp" method="POST" onsubmit="return validateJoinForm()">
+            <input type="text" id="join-name" name="name" placeholder="Your Name" required>
+            <input type="text" id="join-department" name="department" placeholder="Department" required>
+            <input type="number" id="join-cgpa" name="cgpa" step="0.01" placeholder="CGPA (e.g., 3.75)" min="0" max="4" required>
+            <textarea id="join-interests" name="interests" placeholder="Interests" rows="5" required></textarea>
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Pakistan Aeronautics. All rights reserved.</p>
+        <p>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navbar links
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Basic form validation for Contact Form
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            if (name && email && message) {
+                alert('Thank you for your message! We will get back to you soon.');
+                return true;
+            } else {
+                alert('Please fill out all fields.');
+                return false;
+            }
+        }
+
+        // Validation for Join Our Team Form
+        function validateJoinForm() {
+            const name = document.getElementById('join-name').value;
+            const department = document.getElementById('join-department').value;
+            const cgpa = document.getElementById('join-cgpa').value;
+            const interests = document.getElementById('join-interests').value;
+            if (name && department && cgpa && interests) {
+                if (cgpa >= 0 && cgpa <= 4) {
+                    alert('Thank you for your application! We will review it soon.');
+                    return true;
+                } else {
+                    alert('Please enter a valid CGPA between 0 and 4.');
+                    return false;
+                }
+            } else {
+                alert('Please fill out all fields.');
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
